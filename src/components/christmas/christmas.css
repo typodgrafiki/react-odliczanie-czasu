@@ -1,0 +1,12 @@
+#christmasDate
+{
+    /* background: #363333 url(img/bg-christmas.jpg) center no-repeat; */
+    background-size: cover;
+}
+
+#christmasDate h2 
+{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 6px 25px;
+}
