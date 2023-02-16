@@ -63,7 +63,7 @@ ul li span:not(.big)
 
 .section
 {
-    height: calc((100vh - 45px) / 2);
+    height: calc((100vh - 45px));
     display: flex;
     flex-direction: column;
     justify-content: center;

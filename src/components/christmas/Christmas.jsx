@@ -20,7 +20,7 @@ const Christmas = () => {
             </li>
             <li>
                 <span className="seconds big">0</span>
-                <span>minut</span>
+                <span>sekund</span>
             </li>
         </ul>
     </div>
