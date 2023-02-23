@@ -1,5 +1,12 @@
 #newYear
 {
-    background: #949DAC url(../../../src/img/bg-newyear.jpg) center no-repeat;
+    background: #949DAC url(../../../src/img/bg-newyear-mobile.jpg) center no-repeat;
     background-size: cover;
+}
+
+@media (min-width: 768px) {
+    #newYear
+    {
+        background: #949DAC url(../../../src/img/bg-newyear.jpg) center no-repeat;
+    }
 }
