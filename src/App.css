@@ -65,6 +65,11 @@ ul li .big
     padding: 0 12px 5px;
 }
 
+ul.small li .big
+{
+    font-size: 28px;
+}
+
 ul li span:not(.big)
 {
     background-color: #282828;
@@ -81,7 +86,7 @@ ul li span:not(.big)
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10%;
+    row-gap: 5%;
 }
 
 footer 
@@ -104,6 +109,16 @@ footer span
 p 
 {
     margin: 0;
+}
+
+h2.white 
+{
+    background-color: #1d1d1d;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 23px;
+    border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -133,6 +148,11 @@ p
     {
         font-size: 54px;
     }
+    
+    ul.small li .big
+    {
+        font-size: 37px;
+    }
 }
 
 @media (min-width: 991px) {
@@ -151,6 +171,13 @@ p
     {
         font-size: 75px;
         padding: 0 23px 5px;
+    }
+    
+    ul.small li .big
+    {
+        font-size: 50px;
+        padding-left: 13px;
+        padding-right: 13px;
     }
     
 }
