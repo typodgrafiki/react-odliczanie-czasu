@@ -13,16 +13,20 @@ const updateTime = (thisBind) => {
         
     currentDate = new Date();   
     const totalSeconds = ((nyDate - currentDate) / 1000);    
-    const toSeconds = Math.floor(totalSeconds % 60);
-    const toMinutes = Math.floor((totalSeconds / 60) % 60);
-    const toHours = Math.floor((totalSeconds / 3600) % 24);
-    const toDays = Math.floor((totalSeconds / 3600 / 24));
+    const totalSeconds2 = ((nyDate2 - currentDate) / 1000);  
+    let [toSeconds, toMinutes, toHours, toDays, toMinutes2, toSeconds2, toHours2, toDays2] = [0,0,0,0,0,0,0,0];  
     
-    const totalSeconds2 = ((nyDate2 - currentDate) / 1000);    
-    const toSeconds2 = Math.floor(totalSeconds2 % 60);
-    const toMinutes2 = Math.floor((totalSeconds2 / 60) % 60);
-    const toHours2 = Math.floor((totalSeconds2 / 3600) % 24);
-    const toDays2 = Math.floor((totalSeconds2 / 3600 / 24));
+    if (totalSeconds > 0){
+        toSeconds = Math.floor(totalSeconds % 60);
+        toMinutes = Math.floor((totalSeconds / 60) % 60);
+        toHours = Math.floor((totalSeconds / 3600) % 24);
+        toDays = Math.floor((totalSeconds / 3600 / 24));
+        
+        toSeconds2 = Math.floor(totalSeconds2 % 60);
+        toMinutes2 = Math.floor((totalSeconds2 / 60) % 60);
+        toHours2 = Math.floor((totalSeconds2 / 3600) % 24);
+        toDays2 = Math.floor((totalSeconds2 / 3600 / 24));    
+    }
     
     //const months = Math.floor((totalSeconds / 3600 / 24 / 30) % 12);   
     
